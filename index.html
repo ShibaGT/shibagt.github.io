@@ -1,36 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Gray Background with "Shibagt" Text</title>
+    <title>Gray Background with "Shibagt" Tab</title>
     <style>
         body {
             margin: 0;
             padding: 0;
             background-color: #888888;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+        .tabs-container {
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            font-family: Arial, sans-serif;
-            color: white;
         }
-        .main-text {
-            text-align: center;
-        }
-        .big-text {
-            font-size: 48px;
-            font-weight: bold;
-            color: orange;
-        }
-        .small-text {
+        .tab {
+            padding: 10px 20px;
+            background-color: #36393F;
+            border-radius: 5px;
             font-size: 24px;
+            cursor: pointer;
+        }
+        .tab.active {
+            background-color: orange;
+            color: white;
         }
     </style>
 </head>
 <body>
-    <div class="main-text">
-        <div class="big-text">shibagt</div>
-        <div class="small-text">mod menus</div>
+    <div class="tabs-container">
+        <div class="tab active">shibagt</div>
     </div>
 </body>
 </html>
