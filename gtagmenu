@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GTAG Menu</title>
+    <link rel="icon" type="image/png" href="97368497.jpg">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #36393F;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            color: white;
+            animation: fadeIn 1s ease-in;
+        }
+        .main-text {
+            text-align: center;
+        }
+        .big-text {
+            font-size: 48px;
+            font-weight: bold;
+            color: orange;
+            margin-bottom: 10px;
+        }
+        .small-text {
+            font-size: 24px;
+        }
+        .button-container {
+            display: flex;
+            margin-top: 20px;
+        }
+        .button {
+            background-color: #7289DA;
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-right: 10px;
+            text-align: center;
+        }
+        .section {
+            margin-top: 50px;
+            text-align: center;
+        }
+        .section-title {
+            font-size: 32px;
+            font-weight: bold;
+            color: orange;
+            margin-bottom: 20px;
+        }
+        .subsection-text {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main-text">
+        <div class="big-text">GTAG Menu</div>
+    </div>
+    <div class="button-container">
+        <a href="https://shibagt.github.io/gtagmenu/download" target="_blank" class="button">Download</a>
+        <a href="https://discord.gg/shibagtmodmenu" target="_blank" class="button">Join Discord</a>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Section 1</div>
+        <div class="subsection-text">This is the first subsection.</div>
+        <div class="subsection-text">It contains some content.</div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Section 2</div>
+        <div class="subsection-text">This is the second subsection.</div>
+        <div class="subsection-text">It contains more content.</div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Section 3</div>
+        <div class="subsection-text">This is the third subsection.</div>
+        <div class="subsection-text">It has additional details.</div>
+    </div>
+</body>
+</html>
