@@ -18,6 +18,7 @@
         }
         .main-text {
             text-align: center;
+            animation: fadeIn 1s ease-in;
         }
         .big-text {
             font-size: 48px;
@@ -30,6 +31,7 @@
         }
         .button-container {
             display: flex;
+            animation: fadeIn 1s ease-in;
         }
         .button {
             background-color: #7289DA;
@@ -44,6 +46,15 @@
             display: inline-block;
             margin-right: 10px;
             text-align: center;
+            animation: fadeIn 1s ease-in;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
         }
     </style>
 </head>
