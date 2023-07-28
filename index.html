@@ -46,7 +46,10 @@
             display: inline-block;
             margin-right: 10px;
             text-align: center;
-            animation: fadeIn 1s ease-in;
+            transition: transform 0.3s;
+        }
+        .button:hover {
+            transform: scale(1.2);
         }
         @keyframes fadeIn {
             from {
@@ -64,8 +67,8 @@
         <div class="small-text">mod menus</div>
     </div>
     <div class="button-container">
-        <a href="https://discord.gg/shibagtmodmenu" target="_blank" class="button">Join Discord</a>
         <a href="https://shibagt.github.io/gtagmenu" target="_blank" class="button">GTAG Menu</a>
+        <a href="https://discord.gg/shibagtmodmenu" target="_blank" class="button">Join Discord</a>
     </div>
 </body>
 </html>
