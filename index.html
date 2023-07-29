@@ -7,68 +7,61 @@
         body {
             margin: 0;
             padding: 0;
-            background-color: #36393F;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            background-color: #222222;
             font-family: Arial, sans-serif;
             color: white;
         }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
         .main-text {
             text-align: center;
-            animation: fadeIn 1s ease-in;
-        }
-        .big-text {
-            font-size: 48px;
+            font-size: 64px;
             font-weight: bold;
-            color: orange;
+            color: #FFA500;
             margin-bottom: 10px;
         }
         .small-text {
-            font-size: 24px;
+            font-size: 32px;
+            color: #CCCCCC;
+            margin-top: 10px;
         }
         .button-container {
             display: flex;
-            animation: fadeIn 1s ease-in;
+            margin-top: 20px;
         }
         .button {
             background-color: #7289DA;
             color: white;
-            padding: 10px 20px;
+            padding: 12px 24px;
             font-size: 18px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            margin-top: 20px;
-            text-decoration: none; /* Remove underline from the anchor */
+            text-decoration: none;
             display: inline-block;
-            margin-right: 10px;
+            margin: 10px;
             text-align: center;
-            transition: transform 0.3s;
+            transition: transform 0.3s, background-color 0.3s;
         }
         .button:hover {
-            transform: scale(1.2);
-        }
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
+            background-color: #5b6e96;
+            transform: scale(1.1);
         }
     </style>
 </head>
 <body>
-    <div class="main-text">
-        <div class="big-text">shibagt</div>
+    <div class="container">
+        <div class="main-text">shibagt</div>
         <div class="small-text">mod menus</div>
-    </div>
-    <div class="button-container">
-        <a href="https://shibagt.github.io/gtagmenu" target="_blank" class="button">GTAG Menu</a>
-        <a href="https://discord.gg/shibagtmodmenu" target="_blank" class="button">Join Discord</a>
+        <div class="button-container">
+            <a href="https://shibagt.github.io/gtagmenu" target="_blank" class="button">GTAG Menu</a>
+            <a href="https://discord.gg/shibagtmodmenu" target="_blank" class="button">Join Discord</a>
+        </div>
     </div>
 </body>
 </html>
