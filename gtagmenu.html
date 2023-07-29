@@ -7,23 +7,23 @@
         body {
             margin: 0;
             padding: 0;
-            background-color: #36393F;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            background-color: #222222;
             font-family: Arial, sans-serif;
             color: white;
-            animation: fadeIn 1s ease-in;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
         }
         .main-text {
             text-align: center;
-        }
-        .big-text {
             font-size: 48px;
             font-weight: bold;
-            color: orange;
+            color: #FFA500;
             margin-bottom: 10px;
         }
         .small-text {
@@ -36,69 +36,63 @@
         .button {
             background-color: #7289DA;
             color: white;
-            padding: 10px 20px;
+            padding: 12px 24px;
             font-size: 18px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
             text-decoration: none;
             display: inline-block;
-            margin-right: 10px;
+            margin: 10px;
             text-align: center;
-            transition: transform 0.3s;
+            transition: transform 0.3s, background-color 0.3s;
         }
         .button:hover {
-            transform: scale(1.2);
+            background-color: #5b6e96;
+            transform: scale(1.1);
         }
         .section {
-            margin-top: 50px;
             text-align: center;
+            margin: 40px auto;
+            max-width: 600px;
         }
         .section-title {
-            font-size: 32px;
+            font-size: 36px;
             font-weight: bold;
-            color: orange;
-            margin-bottom: 20px;
+            color: #FFA500;
+            margin-bottom: 10px;
         }
         .subsection-text {
             font-size: 20px;
-            margin-bottom: 10px;
-        }
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
+            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
-    <div class="main-text">
-        <div class="big-text">GTAG Menu</div>
-    </div>
-    <div class="button-container">
-        <a href="https://cdn.discordapp.com/attachments/1126907857263149087/1133413313850642492/ShibaGTDARK.dll" target="_blank" class="button">Download</a>
-        <a href="https://discord.gg/shibagtmodmenu" target="_blank" class="button">Join Discord</a>
-    </div>
+    <div class="container">
+        <div class="main-text">GTAG Menu</div>
+        <div class="button-container">
+            <a href="https://cdn.discordapp.com/attachments/1126907857263149087/1134626000936894594/ShibaGT_DARK_V3.0.dll" target="_blank" class="button">Download</a>
+            <a href="https://discord.gg/shibagtmodmenu" target="_blank" class="button">Join Discord</a>
+        </div>
 
-    <div class="section">
-        <div class="section-title">Free</div>
-        <div class="subsection-text">ShibaGTs Menus have always been free, and will always be free.</div>
-        <div class="subsection-text">So it its 100% free to use.</div>
-    </div>
+        <div class="section">
+            <div class="section-title">Free</div>
+            <div class="subsection-text">ShibaGT Menus have always been free, and will always be free.</div>
+            <div class="subsection-text">So it is 100% free to use.</div>
+        </div>
 
-    <div class="section">
-        <div class="section-title">Features</div>
-        <div class="subsection-text">ShibaGTs Menus have 120+ features that are fully undetected.</div>
-        <div class="subsection-text">So you never run out of the fun!</div>
-    </div>
+        <div class="section">
+            <div class="section-title">Features</div>
+            <div class="subsection-text">ShibaGT Menus have 120+ features that are fully undetected.</div>
+            <div class="subsection-text">So you never run out of the fun!</div>
+        </div>
 
-    <div class="section">
-        <div class="section-title">Undetected</div>
-        <div class="subsection-text">ShibaGTs Menus are fully undetected, and if theres any detected features which is very rare, it will have an indicator to tell you if its detected.</div>
-        <div class="subsection-text">ShibaGT always updates his menus so it stays undetected.</div>
+        <div class="section">
+            <div class="section-title">Undetected</div>
+            <div class="subsection-text">ShibaGT Menus are fully undetected, and if there are any detected features, which is very rare, it will have an indicator to tell you if it's detected.</div>
+            <div class="subsection-text">ShibaGT always updates his menus to stay undetected.</div>
+        </div>
     </div>
 </body>
 </html>
