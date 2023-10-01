@@ -7,12 +7,16 @@
     <link rel="icon" href="shibagtgold.png" type="image/png">
     <style>
         body {
-            background: linear-gradient(135deg, #FFD700, #FFB800, #FFD700, #FFB800, #FFD700);
-            background-size: 400% 400%;
-            animation: gradientAnimation 10s linear infinite;
+            background: rgba(255, 239, 0, 1);
+            background-size: 200% 200%;
+            animation: gradientAnimation 10s linear infinite, textureAnimation 10s linear infinite, fadeIn 2s ease-in-out;
             margin: 0;
             height: 100vh;
             overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0; /* Initially set to fully transparent */
         }
 
         @keyframes gradientAnimation {
@@ -21,6 +25,27 @@
             }
             100% {
                 background-position: 100% 50%;
+            }
+        }
+
+        @keyframes textureAnimation {
+            0% {
+                background-image: radial-gradient(circle, rgba(0, 0, 0, 0.1) 1px, transparent 1px), radial-gradient(circle, rgba(255, 239, 0, 1) 1px, transparent 1px);
+                background-size: 10px 10px;
+            }
+            100% {
+                background-image: radial-gradient(circle, rgba(0, 0, 0, 0.1) 1px, transparent 1px), radial-gradient(circle, rgba(255, 239, 0, 1) 1px, transparent 1px);
+                background-size: 10px 10px;
+                background-position: 0 0, 50px 50px;
+            }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1; /* Fully visible */
             }
         }
     </style>
